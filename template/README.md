@@ -8,6 +8,19 @@ One paragraph on what this skill does for you and why it's better than asking an
 
 The jobs and situations it covers.
 
+## Install
+
+Claude Code:
+```
+/plugin marketplace add vishalguptax/agent-skills
+/plugin install skill-name@vishal-agent-skills
+```
+
+Any agent ([skills CLI](https://github.com/vercel-labs/skills)):
+```
+npx skills add vishalguptax/agent-skills --skill skill-name
+```
+
 ## When to use it
 
 Example requests that trigger it:

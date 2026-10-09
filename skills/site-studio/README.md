@@ -16,6 +16,21 @@ Ask an agent for "a landing page" and you usually get the same page as everyone 
 | Moments | Launches, waitlists and coming-soon pages, events and conferences |
 | Content | Docs sites, blogs |
 
+## Install
+
+Claude Code:
+```
+/plugin marketplace add vishalguptax/agent-skills
+/plugin install site-studio@vishal-agent-skills
+```
+
+Any agent ([skills CLI](https://github.com/vercel-labs/skills)):
+```
+npx skills add vishalguptax/agent-skills --skill site-studio
+```
+
+Or copy this folder into your agent's skills directory (e.g. `~/.claude/skills/site-studio/`).
+
 ## When to use it
 
 Just ask. It triggers on requests like these:

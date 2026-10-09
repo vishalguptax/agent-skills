@@ -26,18 +26,28 @@ _1 skill. Categories with no skills yet are listed in [categories.json](categori
 
 ## Install
 
-**Claude Code:** add the marketplace once, then install the skills you want:
+Every skill installs on its own; you never have to take the whole collection.
+
+**Claude Code:** add the marketplace once, then install each skill you want by name (`<skill>@vishal-agent-skills`):
 ```
 /plugin marketplace add vishalguptax/agent-skills
 /plugin install site-studio@vishal-agent-skills
 ```
+Run `/plugin` to browse everything in the marketplace.
 
-**Any agent**, with the [skills CLI](https://github.com/vercel-labs/skills). It lists the skills in this repo and installs the ones you pick, into your agent's skills folder:
+**Any agent**, with the [skills CLI](https://github.com/vercel-labs/skills):
 ```
-npx skills add vishalguptax/agent-skills
+npx skills add vishalguptax/agent-skills --list                # see what's available
+npx skills add vishalguptax/agent-skills --skill site-studio   # install one skill
+npx skills add vishalguptax/agent-skills                       # pick interactively
 ```
+Add `-a <agent>` to choose the agent (`claude-code`, `cursor`, `codex`, …), `-g` to install for all your projects instead of the current one, and `-y` to skip the prompts.
 
-**By hand:** copy a folder from [`skills/`](skills/) into your agent's skills directory, for example `~/.claude/skills/<skill>/` (all projects) or `.claude/skills/<skill>/` / `.agents/skills/<skill>/` (one project).
+**By hand:** copy one folder from [`skills/`](skills/) into your agent's skills directory, for example `~/.claude/skills/<skill>/` (all projects) or `.claude/skills/<skill>/` / `.agents/skills/<skill>/` (one project):
+```
+git clone https://github.com/vishalguptax/agent-skills
+cp -r agent-skills/skills/site-studio ~/.claude/skills/
+```
 
 ## Use
 
