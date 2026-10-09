@@ -1,0 +1,58 @@
+{
+  "skill_name": "site-studio",
+  "evals": [
+    {
+      "id": 1,
+      "name": "devtool-landing-page",
+      "prompt": "Build a landing page for this repo (it's in ./devtool-repo). I'll host it on GitHub Pages at kit.example.dev. Make it look unique, not like every other AI landing page.",
+      "expected_output": "A site brief with a sourced fact sheet, inspiration notes, three distinct directions (one minimal) with a concept tied to the product and extending its DESIGN.md, an IA + SEO plan, and a static hero mockup; stops at the direction/design-proof gate without installing or committing anything.",
+      "files": [
+        "evals/files/devtool-repo"
+      ],
+      "assertions": [
+        "Writes a brief or fact sheet where product facts carry a source (file or line)",
+        "Presents exactly three design directions, one of them explicitly minimal",
+        "The chosen concept builds on the repo's existing DESIGN.md brand rather than replacing it",
+        "Contains no invented social proof (testimonials, user counts, company logos, ratings) absent from the repo",
+        "Plans the SEO/AI-search files: sitemap.xml, robots.txt, llms.txt, JSON-LD and Open Graph images",
+        "Plans GitHub Pages hosting with CNAME kit.example.dev",
+        "Any hero mockup includes a prefers-reduced-motion rule",
+        "Stops for the user's approval before building the full site, and installs or commits nothing"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "portfolio-from-cv",
+      "prompt": "Make me a proper modern portfolio with animations and motion. Here's my CV: maya-okafor-cv.md. I want it to get me a lead design role.",
+      "expected_output": "A brief built only from the CV (positioning, selected work, NDA respected, no invented testimonials), portfolio IA with case-study pages, three directions with portfolio motion patterns and reduced-motion fallbacks, Person/ProfilePage SEO plan, and a hero mockup; asks for what's missing (domain, images) instead of inventing.",
+      "files": [
+        "evals/files/cv/maya-okafor-cv.md"
+      ],
+      "assertions": [
+        "Uses only facts from the CV; no invented testimonials, clients, metrics or awards",
+        "Respects the NDA: plans no screenshots for the Northbeam query builder",
+        "Presents exactly three design directions, one of them explicitly minimal",
+        "Plans a separate case-study page per selected project (e.g. /work/<project>/)",
+        "Plans Person / ProfilePage structured data",
+        "Specifies a reduced-motion fallback for the animations",
+        "Asks the user for missing material (e.g. domain, images, photo) instead of inventing it"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "local-bakery",
+      "prompt": "Our bakery Forno Azul in Porto needs a simple website. Hours: Tue-Sun 7:00-19:00, closed Mondays. Address: Rua das Flores 12, 4050-265 Porto. Phone +351 220 000 000. We take cake orders by phone, 48 hours ahead. We don't have a website or a logo yet. Make it lovely and help us get found on Google.",
+      "expected_output": "Treats it as a local business: hours/address/tap-to-call phone and ordering up front, LocalBusiness/Bakery JSON-LD with opening hours and address, restrained mobile-first motion, three directions incl. minimal, asks for photos/menu/prices/logo/domain instead of inventing them, stops at gate 1.",
+      "files": [],
+      "assertions": [
+        "Puts hours, address, phone (tap-to-call) and how to order in the first screen or top of the page plan",
+        "Plans LocalBusiness/Bakery structured data with address and opening hours",
+        "Invents no menu items, prices, reviews or ratings",
+        "Asks for photos, menu or price list, logo or brand preferences, and domain/host",
+        "Presents three design directions, one of them explicitly minimal",
+        "Keeps motion restrained and prioritises mobile speed for a local business",
+        "Includes a draft page list for the site before building it"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "site-studio",
+  "owner": { "name": "Vishal Gupta", "url": "https://github.com/vishalguptax" },
+  "metadata": {
+    "description": "Design and build distinctive, fast, SEO-ready websites with your coding agent.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "site-studio",
+      "source": "./",
+      "description": "Landing pages, product sites, portfolios and more: evidence-based content, researched design directions with meaningful motion, full SEO and AI-search files, browser and Lighthouse verification, and GitHub Pages hosting."
+    }
+  ]
+}

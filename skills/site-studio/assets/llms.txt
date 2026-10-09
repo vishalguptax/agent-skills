@@ -1,0 +1,18 @@
+# Product Name
+
+> One or two plain sentences: what it is, who it's for, and the main benefit. Same facts as the site and README.
+
+A short paragraph with the key facts an assistant should get right: how to install or start, platforms, license and price, and what makes it different. No marketing language, and no claims that aren't on the site.
+
+## Pages
+
+- [Home](https://example.com/): what it is and how it works
+- [Install](https://example.com/install/): install, update and uninstall commands
+- [Features](https://example.com/features/): each feature in one line
+- [FAQ](https://example.com/faq/): direct answers to common questions
+
+## Links
+
+- [Source code](https://github.com/owner/repo)
+- [Package](https://www.npmjs.com/package/name)
+- [Changelog](https://example.com/changelog/)

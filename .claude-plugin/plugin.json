@@ -1,0 +1,10 @@
+{
+  "name": "site-studio",
+  "version": "0.1.0",
+  "description": "Design and build distinctive, fast, SEO-ready websites: landing pages, product sites, portfolios, docs, events, local businesses and more.",
+  "author": { "name": "Vishal Gupta", "url": "https://github.com/vishalguptax" },
+  "homepage": "https://github.com/vishalguptax/site-studio-skill",
+  "repository": "https://github.com/vishalguptax/site-studio-skill",
+  "license": "MIT",
+  "keywords": ["landing-page", "website", "portfolio", "seo", "design", "motion", "github-pages", "skill"]
+}

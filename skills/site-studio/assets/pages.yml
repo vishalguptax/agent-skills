@@ -1,0 +1,43 @@
+# Deploy the static site in site/ to GitHub Pages.
+# Copy to .github/workflows/pages.yml and adjust the paths, build step and schedule.
+# One-time: repo Settings → Pages → Source: GitHub Actions.
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", "scripts/build-site.mjs", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+  # Optional: refresh numbers baked in by the build script (stars, downloads, version).
+  schedule:
+    - cron: "0 */12 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; never cancel one that's running.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Remove this step if the site is plain files with nothing to build.
+      - name: Build site
+        run: node scripts/build-site.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
