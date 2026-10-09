@@ -1,0 +1,22 @@
+name: Validate skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Skills are valid and the catalog and marketplace are up to date
+        run: node scripts/catalog.mjs --check
+      - name: Bundled scripts parse
+        run: for f in skills/*/scripts/*.mjs scripts/*.mjs; do node --check "$f"; done

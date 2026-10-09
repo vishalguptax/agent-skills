@@ -1,0 +1,14 @@
+{
+  "$comment": "Skill categories. A skill names one in its SKILL.md frontmatter (metadata.category). Add a category here before using it; scripts/catalog.mjs checks this.",
+  "categories": [
+    { "id": "web-design", "title": "Web & Design", "description": "Websites, landing pages, UI, visual and motion design, SEO." },
+    { "id": "development", "title": "Software Development", "description": "Coding workflows, testing, debugging, code review, refactoring." },
+    { "id": "devops", "title": "DevOps & Infrastructure", "description": "CI/CD, deployment, cloud, containers, monitoring." },
+    { "id": "data", "title": "Data & Analysis", "description": "Data processing, analysis, visualisation, reporting." },
+    { "id": "documents", "title": "Documents & Writing", "description": "Docs, technical writing, presentations, file formats." },
+    { "id": "product", "title": "Product & Planning", "description": "Specs, research, roadmaps, prioritisation." },
+    { "id": "marketing", "title": "Marketing & Growth", "description": "Content, launch, social, analytics, growth." },
+    { "id": "productivity", "title": "Productivity & Automation", "description": "Personal workflows, automation, integrations." },
+    { "id": "ai-engineering", "title": "AI & Agent Engineering", "description": "Prompts, agents, skills, evaluations, LLM apps." }
+  ]
+}

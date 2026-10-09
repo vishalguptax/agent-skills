@@ -1,6 +1,12 @@
 ---
 name: site-studio
 description: Design and build a distinctive, fast, SEO-ready website for a project, person, business or idea — landing page, SaaS or product site, dev-tool/open-source page, modern portfolio with motion, agency, app, launch/waitlist, event, local business, store, course or docs. Works from evidence (repo, URLs, CV, LinkedIn PDF, decks; asks when there is no context), researches design prompt libraries and galleries (designprompts.dev, superdesign.dev, motionsites.ai, Godly, Awwwards, Mobbin), proposes distinct directions with meaningful motion, plans with approval gates, builds accessible static pages, adds full SEO and AI-search files (JSON-LD, sitemap, robots, llms.txt, OG images), verifies in a browser and with Lighthouse, and sets up hosting such as GitHub Pages with a custom domain. Use it whenever someone wants a website, homepage, landing or launch page, portfolio, or "a page for my project/app/business", wants a site to look less generic or less AI-made, or wants SEO for a site they are building.
+license: MIT
+metadata:
+  category: web-design
+  version: "0.1.0"
+  summary: "Design and build distinctive, fast, SEO-ready websites (landing pages, product sites, portfolios, local businesses, events and more) from your real content, with researched design directions, meaningful motion, and GitHub Pages hosting."
+  tags: "landing-page, website, portfolio, seo, motion, github-pages"
 ---
 
 # Site Studio
